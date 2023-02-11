@@ -1,4 +1,4 @@
-package homework;
+package homework.pokemon;
 
 import java.util.ArrayList;
 
