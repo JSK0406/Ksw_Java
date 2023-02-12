@@ -3,9 +3,10 @@ package homework.pokemon;
 import java.util.ArrayList;
 
 public class Ggoboogi extends Pokemon {
-    String name = "꼬부기";
+    String name;
     public Ggoboogi(String owner, String skills) {
         super(owner, skills);
+        this.name = "꼬부기";
     }
 
     public String getName() {
@@ -17,7 +18,7 @@ public class Ggoboogi extends Pokemon {
     }
 
     public void attack(int idx) {
-        System.out.println("[꼬북꼬북]" + getOwner() + "의" + this.name + "가" + getSkills().get(idx) + "공격 시전!");
+        System.out.println("[꼬북꼬북] " + getOwner() + "의 " + this.name + "가 " + getSkills().get(idx) + "공격 시전!");
     }
 
     public void swim() {

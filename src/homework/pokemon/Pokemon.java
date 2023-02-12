@@ -1,14 +1,18 @@
 package homework.pokemon;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Pokemon {
+    static private int cnt = 0;
     private String owner;
     private ArrayList<String> skills;
 
-    public Pokemon(String owner, ArrayList<String> skills) {
+    public Pokemon(String owner, String skills) {
         this.owner = owner;
-        this.skills = skills;
+        this.skills = new ArrayList<String>(Arrays.asList(skills.split("/")));
+        ++Pokemon.cnt;
     }
 
     public String getOwner() {
@@ -25,6 +29,14 @@ public class Pokemon {
 
     public void setSkills(ArrayList<String> skills) {
         this.skills = skills;
+    }
+
+    public static int getCnt() {
+        return cnt;
+    }
+
+    public static void setCnt(int cnt) {
+        Pokemon.cnt = cnt;
     }
 
     public void info() {
