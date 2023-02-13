@@ -38,12 +38,13 @@ public class Day21 {
 //        }
 //    }
         String[] strings = {"Hi", "Hello friend", "Aello friend professor"};
-        Arrays.sort(strings, new Comparator<String>() {
-            @Override
-            public int compare(String o1, String o2) {
-                return o2.length() - o1.length();
-            }
-        });
+//        Arrays.sort(strings, new Comparator<String>() {
+//            @Override
+//            public int compare(String o1, String o2) {
+//                return o2.length() - o1.length();
+//            }
+//        });
+        Arrays.sort(strings, ((o1, o2) -> o1.length() - o2.length()));
 
         for(String s : strings) {
             System.out.println(s);
