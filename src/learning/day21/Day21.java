@@ -2,53 +2,52 @@ package learning.day21;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
-//class Circle implements Comparable{
-//    private double radius;
+//interface Positive {
+//    int pos(int x);
+//}
 //
-//    public Circle(double radius) {
-//        this.radius = radius;
-//    }
-//    public double getRadius() {
-//        return radius;
-//    }
-//
-//    public double getArea() {
-//        return Math.PI * radius * radius;
-//    }
-//
-//    public String toString() {
-//        return String.format("원의 반지름은 %s 입니다.", radius);
-//    }
-//
-//    @Override
-//    public int compareTo(Object o) {
-//        Circle c = (Circle) o;
-//        return (int) (getArea() - c.getArea());
-//    }
+//interface Prints {
+//    void print();
 //}
 
+//interface Calc {
+//    double calculate(double d);
+//}
+//
+//interface Gets{
+//    char get(String s, int i);
+//}
 
 public class Day21 {
     public static void main(String[] args) {
-//        Circle[] circles = { new Circle(5.0), new Circle(2.5), new Circle(10.0)};
-//        Arrays.sort(circles);
-//        for (Circle c : circles) {
-//            System.out.println(c);
-//        }
-//    }
-        String[] strings = {"Hi", "Hello friend", "Aello friend professor"};
-//        Arrays.sort(strings, new Comparator<String>() {
-//            @Override
-//            public int compare(String o1, String o2) {
-//                return o2.length() - o1.length();
-//            }
-//        });
-        Arrays.sort(strings, ((o1, o2) -> o1.length() - o2.length()));
+//        Calc c;
+//        // lambda
+//        c = (d) -> Math.abs(d);
+//        System.out.println(c.calculate(-9.9));
+//        // static method reference
+//        c = Math::abs;
+//        System.out.println(c.calculate(-9.9));
+//
+//        Gets g;
+//        g = (a, b) -> a.charAt(b);
+//        g = String::charAt;
+//        System.out.println(g.get("Hello My freind~", 4));
+//        Positive po;
+//        Prints pr;
+//
+//        po = (int n) -> {return n+1;};
+//        po = (n) -> {return n+1;};
+//        po = n -> {return n+1;};
+//        po = (int n) -> n+1;
+//        po = n -> n+1;
+//
+//        pr = () -> System.out.println("Hi!");
+//        pr.print();
+//        List<Integer> l = {1,2,3};
+//        System.out.println(l);
 
-        for(String s : strings) {
-            System.out.println(s);
-        }
 
     }
 }
