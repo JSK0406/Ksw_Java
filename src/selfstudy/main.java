@@ -1,42 +1,59 @@
 package selfstudy;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class main {
     public static void main(String[] args) {
-        Collection<Double> list = Arrays.asList(1.23, 4.56, 7.89);
-        Iterator<Double> it = list.iterator();
+//        Map<String, Integer> soldiers = Map.of("최일구", 3, "박민석", 2, "차병호", 1);
+//        System.out.println(soldiers);
+//        System.out.println(soldiers.size());
+//        System.out.println(soldiers.get("최일구"));
+//
+//        Map<String, Integer> soldiers2 = new HashMap<>(soldiers);
+//        soldiers2.put("심우진", 4);
+//        System.out.println(soldiers2.get("심우진"));
 
-        while (it.hasNext())
-            System.out.print(it.next() + " ");
-        System.out.println();
+//        long s, e;
+//        ArrayList<Integer> a1 = new ArrayList<>();
+//        LinkedList<Integer> l1 = new LinkedList<>();
+//
+//        s = System.nanoTime();
+//        for(int i = 0; i < 100000; i++)
+//         a1.add(0, i);
+//        e = System.nanoTime();
+//        System.out.println(e-s);
+//
+//        s = System.nanoTime();
+//        for(int i = 0; i < 100000; i++)
+//            l1.addFirst(i);
+//        e = System.nanoTime();
+//        System.out.println(e-s);
 
-        String[] soldiers1 = {"최일구123", "차병호12", "김상훈12345", "박민석123656"};
 
-        List<String> soldiers2 = Arrays.asList(soldiers1);
-        soldiers2.set(1, "성윤모");
+//        Stack<Integer> s1 = new Stack<>();
+//
+//        s1.push(1);
+//        s1.push(2);
+//        s1.push(3);
+//        System.out.println(s1.peek());
+//        System.out.println(s1.peek());
+//        System.out.println(s1.pop());
+//        System.out.println(s1.pop());
 
-        for(String s : soldiers2)
-            System.out.print(s + " ");
-        System.out.println();
 
-        soldiers2.sort((s1,s2) -> s1.length() - s2.length());
+//        List<String> soldier = List.of("차병호", "성윤모");
+//        System.out.println(soldier.contains("차병호"));
+//        System.out.println(soldier.indexOf("성윤모"));
+//
+//        List<String> s1 = new ArrayList<>(soldier);
+//        s1.add("박민석");
+//        s1.add("김상훈");
+//        s1.forEach((s) -> System.out.print(s + " "));
+//        System.out.println();
+//        s1.removeIf((s) -> s.contains("박"));
+//        s1.forEach((s) -> System.out.print(s + " "));
 
-        for(String s : soldiers2)
-            System.out.print(s + " ");
-        System.out.println();
 
-        String[] soldiers3 = soldiers2.toArray(new String[0]);
-        // 생성된 배열의 사이즈가 리스트의 사이즈보다 크면 배열의 사이즈로 아니면 리스트의 사이즈로 만들어짐 따라서 0이면 무조건 리스트의 사이즈
-        for(int i = 0; i < soldiers3.length; i++)
-            System.out.print(soldiers3[i] + " ");
-        System.out.println();
 
-        List<String> grades = List.of("이병", "일병", "상병", "병장");
-        // of 메소드는 set으로 변경할 수 없다, 불변
-        grades.forEach((s) -> System.out.println(s));
     }
 }
