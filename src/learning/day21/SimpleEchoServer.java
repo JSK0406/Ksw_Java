@@ -31,11 +31,17 @@ public class SimpleEchoServer {
                     }
                 };
                 Stream s = Stream.generate(socketIn);
-                s.map(text -> {
-                    System.out.println("클라이언트로부터 받은 메세지 : " + text);
-                    pw.println(text);
-                    return text;
-                }).allMatch(t -> t != null);
+//                s.map(text -> {
+//                    System.out.println("클라이언트로부터 받은 메세지 : " + text);
+//                    pw.println(text);
+//                    return text;
+//                }).allMatch(t -> t != null);
+
+//                s.peek(text -> {
+//                    System.out.println("클라이언트로부터 받은 메세지 : " + text);
+//                    pw.println(text);
+//                }).allMatch(Object::nonNull);
+
 //                String line;
 //                while ((line = br.readLine()) != null) {
 //                    System.out.println("클라이언트로 부터 받은 메세지 : " + line);
