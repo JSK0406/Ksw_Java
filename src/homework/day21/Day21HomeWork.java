@@ -47,9 +47,6 @@ class ShapeTest {
         }
         return tmplst1;
     }
-//    static List<Shape> findShapeByColorNArea(List<Shape> shapes, String color, double area) {
-//        return 0;
-//    }
 }
 public class Day21HomeWork {
     public static void main(String[] args) {
