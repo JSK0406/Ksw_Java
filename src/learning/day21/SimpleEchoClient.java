@@ -17,7 +17,7 @@ public class SimpleEchoClient {
             Socket clientSocket = null;
             PrintWriter pw = null;
             BufferedReader br = null;
-            try{
+            try {
                 clientSocket = new Socket(localAddress, 6000);
                 pw = new PrintWriter(clientSocket.getOutputStream(), true);
                 br = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
