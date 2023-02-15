@@ -1,6 +1,8 @@
-package learning.day23;
+package learning.day23.diablo;
 
-public class Sorceress extends Character{
+import learning.day23.diablo.Character;
+
+public class Sorceress extends Character {
     public Sorceress() {
         hp = 300;
         mp = 550;

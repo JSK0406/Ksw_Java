@@ -1,4 +1,4 @@
-package learning.day23;
+package learning.day23.diablo;
 
 public abstract class Character {
     protected int hp;
