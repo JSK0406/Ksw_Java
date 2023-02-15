@@ -26,7 +26,6 @@ class Fruit {
 
 public class main {
     private static int result;
-
     public static void main(String[] args) {
         List<Fruit> fruitList = Arrays.asList(
                 new Fruit("watermelon", 16000),
@@ -36,9 +35,8 @@ public class main {
                 new Fruit("banana", 16000)
         );
 
-//        Stream<Fruit> st = fruitList.stream();
-//        fruitList.stream().sorted((f1, f2) -> f1.getPrice() - f2.getPrice()).forEach(f -> System.out.println(f.getName() + " "));
+        Stream<Fruit> st = fruitList.stream();
+        fruitList.stream().sorted((f1, f2) -> f1.getPrice() - f2.getPrice()).forEach(f -> System.out.println(f.getName() + " "));
 //        fruitList.stream().sorted(Comparator.reverseOrder()).forEach(f -> System.out.println(f.getName() + " "));
-
     }
 }
